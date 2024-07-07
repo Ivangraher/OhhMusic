@@ -1,0 +1,563 @@
+﻿
+/*Selecciona tots els ul, li, h1, h2, h3, h4, h5, h6, body, html.
+assigna'ls un marge de 0px i un padding de 0 0px'*/
+ul, li, h1, h2, h3, h4, h5, h6, body, html{
+margin: 0px;
+padding: 0px;
+}
+/*selecciona tots els div, span, header, article, aside, nav, ul i li 
+indica que la seva posició sigui relativa perquè la seva posició s'assigni segons el seu germà anterior
+utilitzant display indica que acceptin altres elements al seu costat i que puguin tenir unes mies.
+indica que el seu contingut tingui una alineació vertical cap a dalt
+*/
+div, span, header, article, aside, nav, ul, li{
+position: relative;
+display: inline-block;
+vertical-align: top;
+    
+}
+/*Selecciona el html i el body i indica'n que tinguin una amplada i altura del 100%
+*/
+html, body{
+height: 100%;
+width: 100%;
+}
+
+/***********ELEMENTS GENERALS****************************/
+/*Selecciona tots els tags a, i indica que no tinguin subratllat i assignali un color al text*/
+a{
+text-decoration: none;
+color: #FF0000;
+}
+/* Selecciona els links quan el ratolí estigui a sobre (hover) i indica un color a la lletra*/
+a:hover{
+color: blue;
+}
+/* Selecciona tots els nodes de la clase withSpace , indica que tigui una amplada de 100%  */
+.withSpace{
+width: 100%;
+}
+/*Selecciona tots els nodes e la classe button,
+indica que tingui una vora arrodonida d'un color i una amlada de 2px 
+indica que tingui un coor de fons i un color de text.
+Indica que el cursor sigui tipus pointer.
+Indica que l'element tingui una ombra de 
+Indica que tingui un padding a la dreta i a l'esquerre.  */
+
+.button {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #484E6A;
+  padding: 7px 7px 7px 7px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+/*.button{
+border: solid 2px blue;
+background: #FFCC99;
+text-shadow: 2px 2px black;
+cursor: pointer;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 10px; 
+}
+/*Selecciona els tags de la clase button i aplica'ls un estil diferent quan el ratolí estigui sobre*/
+.button{
+color: white;
+}*/
+
+/*Selecciona el body, indica que el text tingui una mida d'1em, que la lletra sigui del tipus "sans-serif"
+i el color de fons sigui #efefef;*/
+body{
+font-size: 1em;
+font-family: sans-serif;
+font-weight: bold;
+
+}
+/*Selecciona el header fill de body,
+indica que tingui una amplada de 100%, un color de fons i un color de lletra. */
+body>header{
+background-image: url("/img/blur.jpg"); /*url("/img/Textured2.jpg");*/
+background-repeat: no-repeat;
+background-size:100%;
+background-attachment:fixed;
+border: none;
+width:100%;
+}
+/*Selecciona l'element amb el id "main",
+indica que el display sigui del tipus block,
+indica que tingui una amplada del 95%, 
+indica que tingui un marge superior i inferior de 0, i un marge automàtic a la dreta i esquerre per aconseguir centrar-ho.
+indica que el seu contingut que sobresurti no es mostri
+*/
+#main{
+display: block;
+width: 95%;
+margin-top: 0;
+margin-bottom: 0;
+margin-right: auto;
+margin-left: auto;
+overflow: hidden;
+
+}
+
+/*Selecciona el node amb id mitgPrincipal, 
+indica que tingui una amplada del 80% i que els seus elements inline es mostrin ocupant tot l'espai que puguin (justificats)*/
+#mitgPrincipal{
+width: 80%;
+text-align: justify;
+background: none;
+border: 10px solid rgba(0, 0, 0, 0.1);
+box-shadow: 10px 10px 5px #888888;
+}
+
+/*Selecciona el node amb id addPrincipal,
+indica que la seva altura sigui el total de l'altura del seu pare, 
+indica que els seus elements inline es mostrin alineats a la dreta, 
+indica que tingui una amplada corresponent al 20% del seu pare */
+#addPrincipal{
+height: 100%;
+text-align: right;
+width: 18%;
+}
+
+/*Selecciona les imatges contingudes dins el node amb id addPrincipal
+indica que tinguin una amplada del 100%, una altura del 90% i una màxima altura i amplada de 300px  */
+#addPrincipal>img{
+ width: 100%;
+ height: 90%;
+ max-height: 300px;
+ max-width: 300px;
+ margin-left: 20px;
+}
+/*Alinea al centre el text del footer fill de body.*/
+body>footer{
+text-align: center;
+}
+/*Selecciona l'element amb id headerTop, 
+indica que tingui una altura de 150px 
+indica que el seus continguts inline es mostring alineats de forma justificada*/
+#headerTop{
+height: 150px;
+text-align: left;
+}
+/* Selecciona els elements de la clase left fills de l'element amb id headerTop
+indica que tinguin una altura de 100%*/
+#headerTop>.left{
+height: 100%;
+}
+/*Seleciona les imatges filles dels elements de la clase left fills de l'element amb id headerTop,
+indica que tinguin una altura máxima del 100% */
+#headerTop>.left>img{
+max-height: 100%;  
+}
+@-moz-keyframes charlieeee {
+  from { background-position:top left; } 
+  to {background-position:top right; }
+}
+@-webkit-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-o-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-ms-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-khtml-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+/*Selecciona els nodes de la classe middle fills de l'element amb id headerTop,i selecciona una altura del 100% */
+#headerTop>.middle{
+height: 75%;
+margin-left: 5%;
+color:white;
+border-color: none;
+background-image: url("/img/music2.jpg");
+-moz-animation:charlieeee 5s forwards linear infinite;
+  -webkit-animation:charlieeee 5s forwards linear infinite;
+  -o-animation:charlieeee 5s forwards linear infinite;
+  -khtml-animation:charlieeee 5s forwards linear infinite;
+  -ms-animation:charlieeee 5s forwards linear infinite;
+  -lynx-animation:charlieeee 5s forwards linear infinite;
+  animation:charlieeee 5s forwards linear infinite;
+  background-size:50% auto;
+
+}
+/*Seleciona les imatges filles dels elements de la clase middle fills de l'element amb id headerTop,
+indica que tinguin una altura máxima del 100%*/
+#headerTop>.middle>img{
+max-height: 100%;  
+}
+/*Selecciona els nodes de la clase right fills del node amb id headerTop,
+indica que la seva posició sigui absoluta per que pugui quedar per devant els seus germans,
+situal a una distáncia de 30px a la dreta del seu pare i a 0px de la part superior, 
+indica que tingui una amplada mínima de 150px, */
+#headerTop>.right{
+position: absolute;
+right: 5px;
+top: 0px;
+min-width: 150px;
+}
+/*Selecciona tots els elements fills del formulari  dins el node de clase contDesplegable
+indica que el seu display sigui del tipus block*/
+.contDesplegable form>*{
+display: block;
+}
+/*Selecciona el formulari dins el node de clase contDesplegable,
+alinia el text a l'esquerre i indica que tingui una vora arrodonida.*/
+.contDesplegable form{
+text-align: left;
+border-radius: 10px;
+}
+/*Selecciona els nodes de clase hidDesplegable fills dels nodes de clase contDesplegable,
+indica amb dispay que no es visualitzi ni ocupi espai, 
+indica que la seva posició sigui absoluta per aconseguir que es mostri per sobre els seus germans, 
+alinea els elements inline que contingui a l'esquerre, 
+indica una posició en l'eix Z de 15,     */
+.contDesplegable>.hidDesplegable{
+display: none;
+position: absolute;
+text-align: left;
+z-index: 15; 
+color:white;
+}
+/*Selecciona els nodes de clase hidDesplegable fills dels nodes de clase contDesplegable quan el ratolí estigui sobre contDesplegable.
+Indica amb display que sigui de tipus block    */
+.contDesplegable:hover>.hidDesplegable{
+display: block;
+}
+
+.botonsTop>.button{
+display: none;
+-webkit-border-radius: 50px 50px 50px 50px;
+border-radius: 50px 50px 50px 50px;
+border-color:red green blue pink;
+}
+
+#login_1{
+background: none;
+}
+
+.middle ul {
+    display: block;
+}
+.middle ul > li {
+    display: block;
+}
+.middle > section {
+    height: 106px;
+    width: 600px;
+}
+.middle > section > nav {
+    height: 100%;
+    width: 200px;
+}
+.Infolinks div {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.Infolinks {
+    height: 100%;
+    overflow: hidden;
+    width: 300px;
+
+}
+.topTable{
+display: inline-block;
+width: 30%;
+color: #303030;
+font-weight: bold;
+
+}
+
+.topTable td {
+padding-bottom: 20px;
+
+}
+
+#addPrincipal >img{
+margin-top: 50px;    
+}
+
+.TopTable >header{
+font-family: cursive;
+border: 5px solid black;
+border-radius: 10px;
+border-spacing: 10px;
+background: white;
+color:black;
+
+}
+body{
+background-image: url("/img/blur.jpg"); /*url("/img/Textured2.jpg");*/
+background-repeat: no-repeat;
+background-size:100%;
+background-attachment:fixed;
+color: black;
+font-weight: bolder;
+}
+
+.fan{
+width: 80%;
+margin: 0 auto;
+text-align: center;
+}
+
+#ordenar{
+-webkit-border-radius: 50px 50px 50px 50px;
+border-radius: 50px 50px 50px 50px;
+
+}
+
+html body div#Perfil_Fan div#image img{
+height: 350px;
+width: 450px;
+}
+
+html body header div#headerTop.withSpace div.right div#imagen_perfil a img{
+height: 100px;
+width: 100px;
+}
+html body div#Tabla_Concierto{
+text-align: center;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+#T_Concierto{
+text-align:center;
+width:100%;
+}
+
+#G_Concierto{
+text-align:center;
+width:100%;
+}
+
+#Gestion_Concierto{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+#C_Local{
+text-align:center;
+width:100%;
+}
+
+#Candidaturas_Local{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+border-spacing: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 0px #ffffff;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #fcffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+#P_Concierto{
+text-align:center;
+width:100%;
+}
+
+#Paginacion_Concierto{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+#M_Candidaturas{
+text-align:center;
+width:100%;
+}
+
+#Musico_Candidaturas{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+#F_Buscador{
+text-align:center;
+width:100%;
+}
+
+#Formulario_Buscador{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+#B_Fan{
+text-align:center;
+width:100%;
+}
+
+#Busqueda_Fan{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+.btn{
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #93999c);
+  background-image: -moz-linear-gradient(top, #ffffff, #93999c);
+  background-image: -ms-linear-gradient(top, #ffffff, #93999c);
+  background-image: -o-linear-gradient(top, #ffffff, #93999c);
+  background-image: linear-gradient(to bottom, #ffffff, #93999c);
+  -webkit-border-radius: 59;
+  -moz-border-radius: 59;
+  border-radius: 59px;
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Courier New;
+  font-weight: bold;
+  color: #000000;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  display:inline-block;
+  margin:4px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.botones_perfil {
+  background: #d9a234;
+  background-image: -webkit-linear-gradient(top, #d9a234, #d14950);
+  background-image: -moz-linear-gradient(top, #d9a234, #d14950);
+  background-image: -ms-linear-gradient(top, #d9a234, #d14950);
+  background-image: -o-linear-gradient(top, #d9a234, #d14950);
+  background-image: linear-gradient(to bottom, #d9a234, #d14950);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+
+.botones_perfil:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#V_Locales{
+text-align:center;
+width:100%;
+}
+
+#Visualizar_Locales{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}
+
+#V_Conciertos{
+text-align:center;
+width:100%;
+}
+
+#Visualizar_Conciertos{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}

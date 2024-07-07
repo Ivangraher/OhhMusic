@@ -1,0 +1,11 @@
+#Registro_Musico{
+text-align: center;
+margin-left: 500px;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+}

@@ -1,0 +1,55 @@
+#P_Musico{
+text-align:center;
+width:100%;
+display:inline-block;
+}
+
+#Perfil_Musico{
+text-align: center;
+margin-top: 20px;
+border: medium solid DodgerBlue;
+box-shadow: 3px 3px 3px 3px black;
+border-radius: 10px;
+padding-left:50px;
+padding-right:50px;
+padding-top:15px;
+padding-bottom:5px;
+display:inline-block;
+}
+
+html body div#Perfil_Musico div#image img{
+    max-height: 350px;
+    max-width: 450px;
+}
+
+.btn {
+  width:;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #93999c);
+  background-image: -moz-linear-gradient(top, #ffffff, #93999c);
+  background-image: -ms-linear-gradient(top, #ffffff, #93999c);
+  background-image: -o-linear-gradient(top, #ffffff, #93999c);
+  background-image: linear-gradient(to bottom, #ffffff, #93999c);
+  -webkit-border-radius: 59;
+  -moz-border-radius: 59;
+  border-radius: 59px;
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Courier New;
+  color: #000000;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  display:inline-block;
+  margin:4px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

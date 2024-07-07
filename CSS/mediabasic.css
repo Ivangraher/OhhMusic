@@ -1,0 +1,59 @@
+#headerTop > .middle{
+display: none;
+}
+
+#topLlista3{
+width: 100%;    
+}
+
+div>.topTable{ 
+height: 500px;
+overflow: auto;
+}
+
+@media screen and (max-width: 650px){
+.botonsTop > .button{
+display: inline-block;
+}
+#addPrincipal{
+bottom: 0;
+height: 100px;
+left: 0;
+position: fixed;
+text-align: center;
+width: 100%;
+z-index: 10
+}
+body>footer{
+padding-bottom: 100px;
+}
+#addPrincipal>img{
+width: 40%;
+height: 100%;
+text-align: center;
+margin: 0;
+}
+.TopTable{
+display: block;
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+.TopTable{
+height: 100%;
+overflow: hidden;
+width: 300px;
+}
+
+#mitgPrincipal{
+overflow: hidden;
+width: 500px;
+height: 500px;
+} 
+
+#topLlista1{
+width:500px;
+height:500px;
+display: inline-block;
+}
+}
